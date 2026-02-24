@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentUrl">
+
+    <fragment
+        android:id="@+id/fragmentUrl"
+        android:name="com.application.presonalcolud.application.connectpcloud.fragments.FragmentUrl"
+        android:label="fragment_url"
+        tools:layout="@layout/fragment_url" >
+        <action
+            android:id="@+id/action_fragmentUrl_to_listOfFilesinArchive"
+            app:destination="@id/listOfFilesinArchive" />
+    </fragment>
+    <fragment
+        android:id="@+id/listOfFilesinArchive"
+        android:name="com.application.presonalcolud.application.connectpcloud.fragments.ListOfFilesinArchive"
+        android:label="fragment_list_of_filesin_archive"
+        tools:layout="@layout/fragment_list_of_filesin_archive" >
+        <argument
+            android:name="response"
+            app:argType="com.application.presonalcolud.application.remote.models.response.ResponseModel" />
+    </fragment>
+</navigation>
