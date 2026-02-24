@@ -1,0 +1,1 @@
+This is an expermenatl project for creating a personal cloud network where you pc or some other device will work as the server and app will be the endpoit for uploading or downloading the docs and stuff
